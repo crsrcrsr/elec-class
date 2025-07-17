@@ -1,0 +1,10 @@
+#N canvas 0 0 749 723 12;
+#X obj 341 251 expr~ cos($v1*(acos(-1))*2);
+#X obj 139 250 expr~ sin($v1*(acos(-1))*2);
+#X obj 269 121 inlet~;
+#X obj 254 309 outlet~;
+#X obj 340 309 outlet~;
+#X connect 0 0 4 0;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 2 0 0 0;
